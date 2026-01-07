@@ -268,7 +268,7 @@
             border-radius: 4px;
         }
 
-        /* Research Interests 标签云 */
+       /* Research Interests 标签云 */
         .research-interests {
             display: flex;
             flex-wrap: wrap;
@@ -279,23 +279,25 @@
         .interest-tag {
             display: inline-block;
             padding: 10px 18px;
-            background: linear-gradient(135deg, var(--primary-alpha-10) 0%, var(--primary-alpha-15) 100%);
-            color: var(--primary-color);
-            border: 1px solid rgba(153, 27, 27, 0.2);
+            background: #ffffff;
+            color: var(--text-gray);
+            border: 1px solid var(--border-color);
             border-radius: 20px;
             font-size: 0.9rem;
             font-weight: 500;
             transition: all 0.3s ease;
             cursor: default;
+            box-shadow: var(--shadow-sm);
         }
         
         .interest-tag:hover {
             background: var(--primary-color);
             color: white;
+            border-color: var(--primary-color);
             transform: translateY(-2px);
             box-shadow: 0 4px 12px rgba(153, 27, 27, 0.25);
         }
-
+        
         /* 链接按钮样式 [Paper] [Code] */
         .link-badges {
             display: flex;
