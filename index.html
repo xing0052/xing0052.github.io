@@ -195,13 +195,29 @@
             position: relative;
             overflow: hidden;
         }
-
+        
+        .publication-entry::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: var(--primary-color);
+            transform: scaleY(0);
+            transition: transform 0.3s ease;
+        }
+        
         .publication-entry:hover {
             border-color: var(--primary-color);
             box-shadow: var(--shadow-lg);
             transform: translateY(-4px);
         }
-
+        
+        .publication-entry:hover::before {
+            transform: scaleY(1);
+        }
+        
         .publication-entry img {
             width: 160px;
             height: 90px;
@@ -209,8 +225,15 @@
             object-fit: cover;
             background-color: #f9fafb;
             border: 1px solid var(--border-color);
-            border-radius: 6px;
+            border-radius: 8px;
             flex-shrink: 0;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+        
+        .publication-entry:hover img {
+            transform: scale(1.05);
+            box-shadow: 0 4px 12px rgba(153, 27, 27, 0.15);
         }
 
         .pub-content {
