@@ -17,12 +17,12 @@ async function loadYAML(url) {
     }
 }
 
-// Highlight the author name (Xiang An)
+// Highlight the author name (Yun Xing)
 function highlightAuthor(authorsText) {
-    // Handle "Xiang An (Project Leader)" case
+    // Handle "Yun Xing (Project Leader)" case
     return authorsText.replace(
-        /Xiang An(\s*\(Project Leader\))?/g, 
-        '<span class="me-highlight">Xiang An$1</span>'
+        /Yun Xing(\s*\(Project Leader\))?/g, 
+        '<span class="me-highlight">Yun Xing$1</span>'
     );
 }
 
