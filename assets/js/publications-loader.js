@@ -28,7 +28,7 @@ function highlightAuthor(authorsText) {
 
 // Render selected publications for index.html
 async function loadSelectedPublications() {
-    const data = await loadYAML('_data/selected_publications.yaml');
+    const data = await loadYAML('data/selected_publications.yaml');
     
     const pubList = document.querySelector('#publications + .pub-list');
     if (!pubList) {
@@ -128,7 +128,7 @@ async function loadSelectedPublications() {
 
 // Render all publications for publications.html
 async function loadAllPublications() {
-    const data = await loadYAML('_data/publications.yaml');
+    const data = await loadYAML('data/publications.yaml');
     
     const pubList = document.querySelector('.pub-list');
     if (!pubList) {
