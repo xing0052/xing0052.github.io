@@ -17,12 +17,21 @@ publications:
     summary: |
       CCA is an approach that mitigates object hallucinations.
 
+  - title: "Cross-Domain Few-Shot Segmentation via Iterative Support-Query Correspondence Mining"
+    authors: "Jiahao Nie, Yun Xing, Gongjie Zhang, Pei Yan, Aoran Xiao, Yap-Peng Tan, Alex C Kot, Shijian Lu"
+    venue: "CVPR 2024"
+    paper_url: "https://arxiv.org/abs/2401.08407"
+    code_url: "https://github.com/niejiahao1998/IFA"
+    preview_image: "assets/img/publication_preview_3.jpg"
+    summary: |
+      CCA is an approach that mitigates object hallucinations.
+
   - title: "Bridging Semantic Gaps for Language-supervised Semantic Segmentation"
     authors: "Yun Xing, Jian Kang, Aoran Xiao, Jiahao Nie, Ling Shao, Shijian Lu"
     venue: "NeurIPS 2023"
     paper_url: "https://arxiv.org/abs/2309.13505"
     code_url: "https://github.com/xing0047/rewrite"
-    preview_image: "assets/img/publication_preview_3.jpg"
+    preview_image: "assets/img/publication_preview_4.jpg"
     summary: |
       CCA is an approach that mitigates object hallucinations.
 
@@ -31,7 +40,7 @@ publications:
     venue: "ECCV 2022"
     paper_url: "https://arxiv.org/abs/2207.02372"
     code_url: "https://github.com/xing0047/TPS"
-    preview_image: "assets/img/publication_preview_4.jpg"
+    preview_image: "assets/img/publication_preview_5.jpg"
     summary: |
       TPS is a video segmentation approach.
   
