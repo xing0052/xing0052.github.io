@@ -1,0 +1,435 @@
+/* Dark Red Theme for Academic Homepage */
+/* Replacing blue colors with dark red variations */
+
+:root {
+  --primary-color: #8B0000; /* Dark Red */
+  --primary-hover: #A52A2A; /* Brown Red */
+  --primary-light: #CD5C5C; /* Indian Red */
+  --primary-dark: #5C0000; /* Very Dark Red */
+  --accent-color: #B22222; /* Firebrick */
+  --text-color: #333333;
+  --background-color: #ffffff;
+  --gray-light: #f5f5f5;
+  --gray-medium: #e0e0e0;
+  --shadow: rgba(139, 0, 0, 0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+/* Header and Navigation */
+header {
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+  color: white;
+  padding: 2rem 1rem;
+  box-shadow: 0 4px 6px var(--shadow);
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.profile-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  object-fit: cover;
+}
+
+.header-info h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.header-info .links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.header-info .links a {
+  color: white;
+  text-decoration: none;
+  opacity: 0.9;
+  transition: opacity 0.3s;
+}
+
+.header-info .links a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+/* Navigation Bar */
+nav {
+  background-color: var(--primary-dark);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px var(--shadow);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+nav li {
+  flex: 1;
+  min-width: 150px;
+}
+
+nav a {
+  display: block;
+  padding: 1rem 1.5rem;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+nav a:hover {
+  background-color: var(--primary-color);
+  transform: translateY(-2px);
+}
+
+/* Main Content */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+section {
+  margin: 2rem 0;
+  padding: 2rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: var(--primary-color);
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid var(--primary-color);
+}
+
+h3 {
+  color: var(--primary-dark);
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* About Section */
+.about-content {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+/* Publications */
+.publication-item {
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--gray-medium);
+}
+
+.publication-item:last-child {
+  border-bottom: none;
+}
+
+.publication-title {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+}
+
+.publication-authors {
+  color: #666;
+  font-style: italic;
+  margin-bottom: 0.3rem;
+}
+
+.publication-venue {
+  color: var(--primary-color);
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.publication-links a {
+  display: inline-block;
+  margin-right: 1rem;
+  padding: 0.3rem 0.8rem;
+  background-color: var(--primary-light);
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  transition: background-color 0.3s;
+}
+
+.publication-links a:hover {
+  background-color: var(--primary-color);
+}
+
+/* Awards Section */
+.awards-list {
+  list-style: none;
+  padding: 0;
+}
+
+.awards-list li {
+  padding: 0.8rem 1rem;
+  margin-bottom: 0.8rem;
+  background-color: var(--gray-light);
+  border-left: 4px solid var(--primary-color);
+  border-radius: 4px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.awards-list li:hover {
+  transform: translateX(5px);
+  box-shadow: 0 2px 8px var(--shadow);
+}
+
+.awards-list li::before {
+  content: '🏆 ';
+  margin-right: 0.5rem;
+}
+
+/* Links and Buttons */
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background-color: var(--primary-color);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.2s;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.btn:hover {
+  background-color: var(--accent-color);
+  transform: translateY(-2px);
+  text-decoration: none;
+}
+
+.btn-secondary {
+  background-color: var(--primary-light);
+}
+
+.btn-secondary:hover {
+  background-color: var(--primary-color);
+}
+
+/* Tags and Badges */
+.tag {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  margin: 0.3rem;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  background-color: var(--accent-color);
+  color: white;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  margin-left: 0.5rem;
+}
+
+/* Open Source / Community Section */
+.project-card {
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border: 2px solid var(--gray-medium);
+  border-radius: 8px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+  border-color: var(--primary-color);
+  box-shadow: 0 4px 12px var(--shadow);
+}
+
+.project-card h3 {
+  margin-top: 0;
+  color: var(--primary-color);
+}
+
+/* Footer */
+footer {
+  background-color: #2c2c2c;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-top: 3rem;
+}
+
+footer a {
+  color: var(--primary-light);
+}
+
+footer a:hover {
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .header-info h1 {
+    font-size: 2rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav li {
+    width: 100%;
+  }
+
+  section {
+    padding: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .publication-links a {
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* Additional Utility Classes */
+.text-center {
+  text-align: center;
+}
+
+.mt-1 { margin-top: 1rem; }
+.mt-2 { margin-top: 2rem; }
+.mb-1 { margin-bottom: 1rem; }
+.mb-2 { margin-bottom: 2rem; }
+
+.flex {
+  display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.gap-1 {
+  gap: 1rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.6s ease-out;
+}
+
+/* Loading States */
+.loading {
+  color: var(--primary-color);
+  font-style: italic;
+}
+
+/* Highlight Effect */
+.highlight {
+  background-color: rgba(139, 0, 0, 0.1);
+  padding: 0.2rem 0.4rem;
+  border-radius: 3px;
+}
+
+/* Code Blocks (if needed) */
+code {
+  background-color: var(--gray-light);
+  padding: 0.2rem 0.4rem;
+  border-radius: 3px;
+  font-family: 'Courier New', monospace;
+  color: var(--primary-dark);
+}
+
+pre {
+  background-color: var(--gray-light);
+  padding: 1rem;
+  border-radius: 5px;
+  overflow-x: auto;
+  border-left: 4px solid var(--primary-color);
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--gray-light);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-color);
+}
