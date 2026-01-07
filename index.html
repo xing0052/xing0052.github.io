@@ -190,13 +190,16 @@
             border: 1px solid var(--border-color);
             background: #ffffff;
             border-radius: 8px;
-            transition: box-shadow 0.2s ease, border-color 0.2s ease;
+            transition: all 0.3s ease;
             box-shadow: var(--shadow-sm);
+            position: relative;
+            overflow: hidden;
         }
 
         .publication-entry:hover {
             border-color: var(--primary-color);
-            box-shadow: var(--shadow-md);
+            box-shadow: var(--shadow-lg);
+            transform: translateY(-4px);
         }
 
         .publication-entry img {
