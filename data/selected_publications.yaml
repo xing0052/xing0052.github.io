@@ -17,12 +17,21 @@ publications:
     summary: |
       CCA is an approach that mitigates object hallucinations.
 
+  - title: "Bridging Semantic Gaps for Language-supervised Semantic Segmentation"
+    authors: "Yun Xing, Jian Kang, Aoran Xiao, Jiahao Nie, Ling Shao, Shijian Lu"
+    venue: "NeurIPS 2023"
+    paper_url: "https://arxiv.org/abs/2309.13505"
+    code_url: "https://github.com/xing0047/rewrite"
+    preview_image: "assets/img/publication_preview_3.jpg"
+    summary: |
+      CCA is an approach that mitigates object hallucinations.
+
   - title: "Domain Adaptive Video Segmentation via Temporal Pseudo Supervision"
     authors: "Yun Xing, Dayan Guan, Jiaxing Huang, Shijian Lu"
     venue: "ECCV 2022"
     paper_url: "https://arxiv.org/abs/2207.02372"
     code_url: "https://github.com/xing0047/TPS"
-    preview_image: "assets/img/publication_preview_3.jpg"
+    preview_image: "assets/img/publication_preview_4.jpg"
     summary: |
       TPS is a video segmentation approach.
   
