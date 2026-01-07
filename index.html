@@ -268,6 +268,34 @@
             border-radius: 4px;
         }
 
+        /* Research Interests 标签云 */
+        .research-interests {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+        
+        .interest-tag {
+            display: inline-block;
+            padding: 10px 18px;
+            background: linear-gradient(135deg, var(--primary-alpha-10) 0%, var(--primary-alpha-15) 100%);
+            color: var(--primary-color);
+            border: 1px solid rgba(153, 27, 27, 0.2);
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            cursor: default;
+        }
+        
+        .interest-tag:hover {
+            background: var(--primary-color);
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(153, 27, 27, 0.25);
+        }
+
         /* 链接按钮样式 [Paper] [Code] */
         .link-badges {
             display: flex;
@@ -688,6 +716,13 @@
         <p>
             Currently, we are focusing on <b>reasoning and agentic MLLMs</b> to address some of the frontier needs in modern multimodal learning. Please feel free to reach out if you are interested in related topics.
         </p>
+
+        <h2 id="research">Research Interests</h2>
+        <div class="research-interests">
+            <span class="interest-tag">Hallucination</span>
+            <span class="interest-tag">Reasoning</span>
+            <span class="interest-tag">Language-Supervised Segmentation</span>
+        </div>
 
         <h2 id="publications">Selected Publications</h2>
         <ul class="pub-list">
