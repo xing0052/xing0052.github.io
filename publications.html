@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Yun Xing's Full Publication List">
     <title>Publications - Yun Xing</title>
-    <link rel="icon" href="assets/img/profile_pic.jpg" type="image/jpg">
+    <link rel="icon" href="assets/img/profile.jpg" type="image/jpg">
     <style>
         :root {
             --primary-color: #991b1b;
@@ -250,49 +250,130 @@
         }
 
         .pub-item {
-            padding: 20px 24px;
+            display: flex;
+            padding: 24px;
             border: 1px solid var(--border-color);
-            border-radius: 8px;
-            margin-bottom: 16px;
             background: #ffffff;
-            transition: box-shadow 0.2s ease, border-color 0.2s ease;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
             box-shadow: var(--shadow-sm);
+            position: relative;
+            overflow: hidden;
         }
-
+        
+        .pub-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: var(--primary-color);
+            transform: scaleY(0);
+            transition: transform 0.3s ease;
+        }
+        
         .pub-item:hover {
             border-color: var(--primary-color);
-            box-shadow: var(--shadow-md);
+            box-shadow: var(--shadow-lg);
+            transform: translateY(-4px);
         }
-
+        
+        .pub-item:hover::before {
+            transform: scaleY(1);
+        }
+        
         .pub-item:last-child {
             margin-bottom: 0;
         }
-
+        
+        /* 论文图片 */
+        .pub-item img {
+            width: 160px;
+            height: 90px;
+            margin-right: 24px;
+            object-fit: cover;
+            background-color: #f9fafb;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            flex-shrink: 0;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+        
+        .pub-item:hover img {
+            transform: scale(1.05);
+            box-shadow: 0 4px 12px rgba(153, 27, 27, 0.15);
+        }
+        
+        /* 论文内容区 */
+        .pub-content {
+            flex: 1;
+        }
+        
         .pub-title {
-            font-size: 1rem;
+            font-size: 1.05rem;
             font-weight: 600;
             color: var(--text-dark);
-            margin-bottom: 6px;
-            line-height: 1.4;
+            margin-bottom: 8px;
+            display: block;
+            line-height: 1.5;
+            letter-spacing: -0.01em;
         }
-
+        
         .pub-authors {
             color: var(--text-light);
             font-size: 0.9rem;
             margin-bottom: 6px;
+            display: block;
             line-height: 1.5;
         }
-
+        
         .pub-venue {
             color: var(--primary-color);
             font-weight: 600;
-            font-size: 0.85rem;
+            font-size: 0.875rem;
             display: inline-block;
             background: var(--primary-alpha-10);
-            padding: 4px 10px;
+            padding: 4px 12px;
             border-radius: 4px;
         }
-
+        
+        /* 链接按钮样式 */
+        .link-badges {
+            display: flex;
+            gap: 8px;
+            margin-top: 4px;
+        }
+        
+        .badge-link {
+            display: inline-flex;
+            align-items: center;
+            padding: 6px 14px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: #fff;
+            background: var(--primary-color);
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.2s ease;
+        }
+        
+        .badge-link:hover {
+            background: var(--primary-hover);
+        }
+        
+        .badge-secondary {
+            background: transparent;
+            border: 1px solid var(--primary-color);
+            color: var(--primary-color);
+        }
+        
+        .badge-secondary:hover {
+            background: var(--primary-color);
+            color: #fff;
+        }
         .me-highlight {
             color: var(--primary-color);
             font-weight: 600;
@@ -345,6 +426,18 @@
             h2 {
                 font-size: 1.2rem;
                 margin-top: 28px;
+            }
+
+            .pub-item {
+                flex-direction: column;
+                padding: 16px;
+            }
+        
+            .pub-item img {
+                width: 100%;
+                height: auto;
+                margin-right: 0;
+                margin-bottom: 16px;
             }
         }
 
